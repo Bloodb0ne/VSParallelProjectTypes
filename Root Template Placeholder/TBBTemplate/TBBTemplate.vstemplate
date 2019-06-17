@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>TBB Project</Name>
+    <Description>A basic Thread Building Blocks project</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>TBB Project</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>icon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="TBBTemplate.vcxproj" File="TBBTemplate.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.vcxproj.filters">TBBTemplate.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="main.cpp">main.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="TBBCustomProps.props">TBBCustomProps.props</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>RootTemplatePlaceholder, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=9a0a174492e9b787</Assembly>
+    <FullClassName>RootTemplatePlaceholder.TBBProjectWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

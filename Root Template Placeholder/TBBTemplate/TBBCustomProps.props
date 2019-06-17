@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" >
+    <TBBHeaders>$tbbheaders$</TBBHeaders>
+    <TBBLib>$tbblibs$</TBBLib>
+    <TBBDll>$tbbdlls$</TBBDll>
+  </PropertyGroup>
+  <ItemGroup>
+    <BuildMacro Include="TBBHeaders">
+      <Value>$(TBBHeaders)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TBBLib">
+      <Value>$(TBBLib)</Value>
+    </BuildMacro>
+    <BuildMacro Include="TBBDll">
+      <Value>$(TBBDll)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

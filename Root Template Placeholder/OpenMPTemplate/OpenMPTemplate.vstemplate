@@ -1,0 +1,23 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>OpenMP Project</Name>
+    <Description>A starter template for OpenMP project research</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1</SortOrder>
+    <CreateNewFolder>false</CreateNewFolder>
+    <CreateInPlace>false</CreateInPlace>
+    <DefaultName>OpenMP Project</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>icon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="OpenMPTemplate.vcxproj" File="OpenMPTemplate.vcxproj" ReplaceParameters="true">
+        <ProjectItem ReplaceParameters="true"  TargetFileName="$projectname$.vcxproj.filters">OpenMPTemplate.vcxproj.filters</ProjectItem>
+        <ProjectItem  ReplaceParameters="true" TargetFileName="main.cpp">main.cpp</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
